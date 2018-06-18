@@ -1,0 +1,11 @@
+This enhancement shall support the Invitro business with some features to reduce the number of allocations. Also in case of adding substitutes without having impact to the overall contract price and suppress additional allocations.
+
+There are three main scenarios in place:
+
+a)	Creation of a new Invitro Contract in Sales including one time allocation in RAR and calculation of Contract Factor.
+b)	Updating existing Invitro Contract in Sales with substitutes including calculation of “allocated value” based on contract factor in RAR.
+c)	Updating existing Invitro Contract in Sales with new items and regular re allocation of contract data to provide new allocated values for further processing.
+
+Scenario a) ‘Calculation of Contract Factor’ is described in a dedicated FS document. As a result the contract factor is captured on item level of RAR Contract in a customer field ZCONFACTOR.
+
+Calculation of allocated values and transfer of data via Adapter Reuses Layer (ARL) into RAR-Tool is part of this functional specification. 
